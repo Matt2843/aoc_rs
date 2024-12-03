@@ -1,9 +1,10 @@
 pub mod aoc_util;
 pub mod day1;
 pub mod day2;
+pub mod day3;
 
 fn day_modules() -> Vec<fn(&str) -> (usize, usize)> {
-    vec![day1::solve,day2::solve]
+    vec![day1::solve, day2::solve, day3::solve]
 }
 
 #[allow(dead_code)]
