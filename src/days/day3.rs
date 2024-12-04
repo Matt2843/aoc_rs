@@ -13,7 +13,7 @@ pub fn solve(inp: &str) -> (usize, usize) {
             *incl = match hay {
                 x if x.contains("do()") => true,
                 x if x.contains("don't()") => false,
-                _ => *incl
+                _ => *incl,
             };
             Some(if *incl { x } else { 0 })
         })
