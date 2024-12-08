@@ -12,7 +12,8 @@ fn eval(ops: &[&char], vals: &[usize]) -> usize {
 }
 
 fn calculate_sum(parsed: &[(usize, Vec<usize>)], operators: &[char]) -> usize {
-    parsed.iter()
+    parsed
+        .iter()
         .flat_map(|(lhs, vals)| {
             (0..vals.len() - 1)
                 .map(|_| operators)
